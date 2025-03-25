@@ -17,6 +17,18 @@
             android:hint="Nome" />
 
         <EditText
+            android:id="@+id/edtUF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UF" />
+
+        <EditText
+            android:id="@+id/edtCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cidade" />
+
+        <EditText
             android:id="@+id/etIdade"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -30,6 +42,12 @@
             android:inputType="phone"
             android:hint="Telefone" />
 
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email" />
+
         <TextView
             android:text="Tamanho da roupa:"
             android:layout_width="wrap_content"
@@ -42,14 +60,20 @@
 
             <RadioButton
                 android:id="@+id/rbP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="P" />
 
             <RadioButton
                 android:id="@+id/rbM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="M" />
 
             <RadioButton
                 android:id="@+id/rbG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="G" />
         </RadioGroup>
 
@@ -59,15 +83,21 @@
             android:layout_height="wrap_content"/>
 
         <CheckBox
-            android:id="@+id/cbVermelho"
+            android:id="@+id/chkVermelho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Vermelho" />
 
         <CheckBox
-            android:id="@+id/cbAzul"
+            android:id="@+id/chkAzul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Azul" />
 
         <CheckBox
-            android:id="@+id/cbPreto"
+            android:id="@+id/chkPreto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="Preto" />
 
         <Button

@@ -4,30 +4,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="16dp">
 
     <CheckBox
-        android:id="@+id/cbNotificacoes"
+        android:id="@+id/chkNotificacoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Receber notificações" />
+        android:text="Receber Notificações" />
 
     <CheckBox
-        android:id="@+id/cbModoEscuro"
+        android:id="@+id/chkModoEscuro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Modo escuro" />
+        android:text="Modo Escuro" />
 
     <CheckBox
-        android:id="@+id/cbLembrarLogin"
+        android:id="@+id/chkLembrarLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lembrar login" />
+        android:text="Lembrar Login" />
 
     <Button
         android:id="@+id/btnSalvar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Salvar Preferências"
-        android:layout_marginTop="16dp"/>
+        android:text="Salvar Preferências" />
+
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.checkboxnomeapp;
+package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,6 +7,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.myapplication.R;
 
 import com.example.myapplication.MainActivity;
 
@@ -18,11 +19,11 @@ public class Ex4CheckboxNomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_ex4_checkbox_nome);
 
-        edtNome = findViewById(R.id.edtNome);
+        edtNome = findViewById(R.id.etNome);
         btnGerar = findViewById(R.id.btnGerar);
-        layoutCheckBoxes = findViewById(R.id.layoutCheckBoxes);
+        layoutCheckBoxes = findViewById(R.id.layoutCheckboxes);
 
         btnGerar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +32,7 @@ public class Ex4CheckboxNomeActivity extends AppCompatActivity {
                 String nome = edtNome.getText().toString();
 
                 for (char letra : nome.toCharArray()) {
-                    CheckBox checkBox = new CheckBox(MainActivity.this);
+                    CheckBox checkBox = new CheckBox(Ex4CheckboxNomeActivity.this);
                     checkBox.setText(String.valueOf(letra));
                     layoutCheckBoxes.addView(checkBox);
                 }

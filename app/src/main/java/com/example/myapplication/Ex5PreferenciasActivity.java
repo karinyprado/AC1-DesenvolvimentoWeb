@@ -1,4 +1,4 @@
-package com.example.preferenciasapp;
+package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,6 +6,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.myapplication.R;
 
 public class Ex5PreferenciasActivity extends AppCompatActivity {
     private CheckBox chkNotificacoes, chkModoEscuro, chkLembrarLogin;
@@ -14,7 +15,7 @@ public class Ex5PreferenciasActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_ex5_preferencias);
 
         chkNotificacoes = findViewById(R.id.chkNotificacoes);
         chkModoEscuro = findViewById(R.id.chkModoEscuro);
@@ -34,7 +35,7 @@ public class Ex5PreferenciasActivity extends AppCompatActivity {
                     msg = new StringBuilder("Nenhuma preferência foi escolhida.");
                 }
 
-                Toast.makeText(MainActivity.this, msg.toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(Ex5PreferenciasActivity.this, msg.toString(), Toast.LENGTH_LONG).show();
             }
         });
     }

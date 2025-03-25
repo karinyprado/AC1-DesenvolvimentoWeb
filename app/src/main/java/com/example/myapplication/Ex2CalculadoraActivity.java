@@ -1,4 +1,4 @@
-package com.example.calculadoraapp;
+package com.example.myapplication;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,6 +6,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.myapplication.R;
+
 
 public class Ex2CalculadoraActivity extends AppCompatActivity {
     private EditText edtNum1, edtNum2;
@@ -15,15 +17,15 @@ public class Ex2CalculadoraActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_ex2_calculadora);
 
-        edtNum1 = findViewById(R.id.edtNum1);
-        edtNum2 = findViewById(R.id.edtNum2);
-        btnSomar = findViewById(R.id.btnSomar);
-        btnSubtrair = findViewById(R.id.btnSubtrair);
-        btnMultiplicar = findViewById(R.id.btnMultiplicar);
-        btnDividir = findViewById(R.id.btnDividir);
-        txtResultado = findViewById(R.id.txtResultado);
+        edtNum1 = findViewById(R.id.etNum1);
+        edtNum2 = findViewById(R.id.etNum2);
+        btnSomar = findViewById(R.id.btnSoma);
+        btnSubtrair = findViewById(R.id.btnSubtracao);
+        btnMultiplicar = findViewById(R.id.btnMultiplicacao);
+        btnDividir = findViewById(R.id.btnDivisao);
+        txtResultado = findViewById(R.id.tvResultado);
 
         View.OnClickListener operacao = new View.OnClickListener() {
             @Override
